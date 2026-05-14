@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .box{
+            background: tomato;
+            padding: 20x;
+            /* border-right: 20px; */
+            font-size: 20px;
+            width: 90%;
+        }
+        .box:hover{
+            background:#001;
+        }
+        header{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 6px;
+
+        }
+        nav{
+            display:flex;
+            gap: 12px;
+            background: #001;
+            padding: 12px;
+            flex-direction: column;
+            position: absolute;
+            width: 90%;
+            left: 5%;
+            border-radius: 10px;
+            top: 20px;
+            transform: translate(200%);
+            
+            @media screen and (min-width:768px) {
+                display:flex;
+                position: static;
+                width: auto;
+                flex-direction: row;
+                background: transparent;
+                transform: translate(0);
+            }
+        }
+        header button{
+            display: block;
+            @media screen and (min-width:768px) {
+                display: none;
+            }
+
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>brand</h1>
+        <nav>
+            <a href="">link</a>
+            <a href="">link</a>
+            <a href="">link</a>
+        </nav>
+        <button> MENU</button>
+    </header>
+    
+</body>
+</html>
